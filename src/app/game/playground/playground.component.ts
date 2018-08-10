@@ -11,6 +11,7 @@ import { FormControl } from '@angular/forms';
 export class PlaygroundComponent implements OnInit {
 
   verb: any;
+  public selectedVerb;
   verbs = ['être',
   'avoir',
   'aller',
@@ -65,6 +66,6 @@ export class PlaygroundComponent implements OnInit {
 
   public getVerb(inf: string): any {
     // return this.gramm.getRandomVerb();
-    this.verb = this.verbHandler.getSpecificVerb(inf);
+    // this.verb = this.verbHandler.getSpecificVerb(inf);
   }
 }
