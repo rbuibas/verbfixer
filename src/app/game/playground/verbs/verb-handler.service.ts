@@ -6,12 +6,22 @@ import { Verb } from './verb';
 })
 export class VerbHandlerService {
 
-  verbs: Verb[];
+  verbs: Verb[] = new Array<any>();
 
-  simpleVerbs: any[];
+  simpleVerbs: any[] = new Array<any>();
 
   constructor() {
     this.preloadTestVerbs();
+  }
+
+  public getSpecificVerb(inf: string) {
+    return this.simpleVerbs.find((x) => {
+      return x.inf === inf;
+    }, {});
+  }
+
+  public getListOfVerbs() {
+    return this.simpleVerbs.map((x) => x = x.inf);
   }
 
   private preloadTestVerbs() {

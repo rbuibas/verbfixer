@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import { AppRoutesModule } from './app-routes.module';
 import { GramatikaModule } from './gramatika/gramatika.module';
 import { GameModule } from './game/game.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
